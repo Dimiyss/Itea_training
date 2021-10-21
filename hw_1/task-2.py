@@ -18,7 +18,7 @@ def create_random_matrix(size):
     for index_x in range(size):
         line_list = []
         for index_y in range(size):
-            line_list.append(randint)
+            line_list.append(randint(0, 100))
         random_matrix.append(line_list)
     return random_matrix
 
@@ -45,6 +45,10 @@ elif using_matrix == 2:
 else:
     print('Wrong choice!! Used random martix 10x10')
     task_matrix = create_random_matrix(10)
+
+print('Your matrix is:')
+for rows in task_matrix:
+    print(rows)
 
 fined_num = int(input('Please, input integer value, that you want to found in matrix: \n'))
 
