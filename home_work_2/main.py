@@ -40,6 +40,7 @@ if __name__ == '__main__':
     my_library = first_load_from_file()
 
     while True:
+        print('Current library:')
         print(my_library)
         try:
             action = int(input(
