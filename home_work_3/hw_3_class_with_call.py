@@ -9,6 +9,7 @@ def benchmark(method: Any, critical_time: float):
     :param critical_time: critical time execution value in sec
     :return: func
     """
+
     def wrapper(*args, **kwargs):
         time_start = time()
         res = method(*args, **kwargs)
@@ -19,14 +20,12 @@ def benchmark(method: Any, critical_time: float):
     return wrapper
 
 
-def decor_time_critical(critical_time: float):
-    """
-    External func decor for receiving critical timeout
-    :param critical_time: critical time execution value in sec
-    :return: internal func decorator
-    """
-    def decor_time_critical_without_time(cls):
+class DecorTimeCrit:
+    """Class decorator"""
+    def __init__(self, critical_time):
+        self.critical_time = critical_time
 
+    def __call__(self, cls):
         def wrapper(*arg, **kwargs):
             for attribute in dir(cls):
                 if attribute.startswith('__'):
@@ -35,17 +34,16 @@ def decor_time_critical(critical_time: float):
                 val_attr = getattr(cls, attribute)
 
                 if callable(val_attr):
-                    decor_method = benchmark(val_attr, critical_time)
+                    decor_method = benchmark(val_attr, self.critical_time)
                     setattr(cls, attribute, decor_method)
             return cls(*arg, **kwargs)
 
         return wrapper
 
-    return decor_time_critical_without_time
 
-
-@decor_time_critical(0.5)
+@DecorTimeCrit(0.5)
 class Test:
+
     def method_1(self):
         print('slow method start')
         sleep(1)

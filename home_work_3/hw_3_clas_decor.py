@@ -9,14 +9,14 @@ def benchmark(method: Any, critical_time: float):
     :param critical_time: critical time execution value in sec
     :return: func
     """
-    def helper(*args, **kwargs):
+    def wrapper(*args, **kwargs):
         time_start = time()
         res = method(*args, **kwargs)
         if time() - time_start >= critical_time:
             print(f'WARNING! {method} slow!! Time is: {time() - time_start} sec, critical_time = {critical_time}')
         return res
 
-    return helper
+    return wrapper
 
 
 def decor_time_critical(critical_time: float):
