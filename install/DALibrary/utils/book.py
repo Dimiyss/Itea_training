@@ -1,3 +1,7 @@
+"""The Book Module"""
+from typing import Any
+
+
 class Book:
     """Class that describe book in library"""
     count = 0
@@ -19,6 +23,19 @@ class Book:
 
     def set_current_place(self, reader_id):
         self.__current_place = reader_id
+
+    def get_attribute_value(self, name: str) -> Any:
+        """
+        The function for return object attribute value by name
+        :param name: attribute name
+        :return: attribute valuer
+        """
+        if name == 'title':
+            return self.__title
+        if name == 'published_date':
+            return self.__published_date
+        if name == 'author':
+            return self.__author
 
     def __str__(self):
         return f'{self.__id}:{self.__title}'
