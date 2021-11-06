@@ -128,7 +128,7 @@ class Library:
         :param is_reverse: flag indicate reverse way of sort
         :return:
         """
-        return sorted(self.__book_list, key=lambda x: x.__getattribute__(sort_key), reverse=is_reverse)
+        return sorted(self.__book_list, key=lambda x: x.get_attribute_value(sort_key), reverse=is_reverse)
 
     def __repr__(self):
         return f'All books in lib: {self.__book_list}\nAll readers: {self.__reader_list}'

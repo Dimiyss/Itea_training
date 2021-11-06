@@ -21,6 +21,9 @@ class Book:
     def set_current_place(self, reader_id):
         self.__current_place = reader_id
 
+    def get_attribute_value(self, name):
+        return self.__getattribute__(name)
+
     def __str__(self):
         return f'{self.__id}:{self.__title}'
 
