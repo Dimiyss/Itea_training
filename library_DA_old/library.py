@@ -1,6 +1,6 @@
-"""The Library Lodule"""
-from library_DA.utils.book import Book
-from library_DA.utils.reader import Reader
+"""The Library Module"""
+from .utils.book import Book
+from .utils.reader import Reader
 from typing import Any
 
 
