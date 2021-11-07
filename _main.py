@@ -1,8 +1,8 @@
-from DAlibrary import library as library_c
-from DAlibrary.utils import book as book_c
-from DAlibrary.utils import reader as reader_c
+from library_DA_old import library as library_c
+from library_DA_old.utils import book as book_c
+from library_DA_old.utils import reader as reader_c
 from random import randint
-from time import sleep
+
 
 book_count_file = 0
 reader_count_file = 0
@@ -78,32 +78,19 @@ if __name__ == '__main__':
                 book_id = 1
                 reader_id = 1
             print(my_library.give_book(book_id, reader_id))
-            sleep(2)
         elif action == 4:
             try:
                 book_id = int(input('Pls, enter book_id that will be return to library'))
             except ValueError:
                 print('Wrong choice, to be use random(0-10)')
                 book_id = randint(1, 10)
-            print('************************************************************************')
             print(my_library.return_book(book_id))
-            print('************************************************************************')
-            sleep(2)
         elif action == 5:
-            print('************************************************************************')
             print(my_library.get_book_list())
-            print('************************************************************************')
-            sleep(2)
         elif action == 6:
-            print('************************************************************************')
             print(my_library.get_available_book_list())
-            print('************************************************************************')
-            sleep(2)
         elif action == 7:
-            print('************************************************************************')
             print(my_library.get_busy_book_list())
-            print('************************************************************************')
-            sleep(2)
         elif action == 8:
             try:
                 sort_key_id = int(input('Enter sort key: 1-title, 2-publish year, 3-author(default)'))
@@ -122,9 +109,6 @@ if __name__ == '__main__':
                 revers = True
             else:
                 revers = False
-            print('************************************************************************')
             print(my_library.sorted_book(sort_key=sort_key, is_reverse=revers))
-            print('************************************************************************')
-            sleep(2)
         else:
             break
