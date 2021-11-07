@@ -1,6 +1,0 @@
-Adam;Smith
-Grimm;Noname
-Reader;Reader
-Max;Smith
-Dan;Noname
-Rider;Reader
