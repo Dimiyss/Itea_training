@@ -1,8 +1,8 @@
 """Module for work with file data base in JSON format"""
 import json
-from utils.db_interfaces import BaseDB
-from utils.book import Book
-from utils.reader import Reader
+from .utils.db_interfaces import BaseDB
+from .utils.book import Book
+from .utils.reader import Reader
 
 
 class JsonDB(BaseDB):
@@ -24,7 +24,7 @@ class JsonDB(BaseDB):
         """
         with open((self.storage_path + file_name), 'w') as file:
             for element in content:
-                file.write(element + '\n')
+                file.write(json.dumps(element) + '\n')
 
         return f'Write success'
 
@@ -50,7 +50,7 @@ class JsonDB(BaseDB):
         if not books:
             return f'Nothing to write to db'
 
-        self.__write_file('books.json', [book.to_json() for book in books])
+        self.__write_file('books.json', [book.to_dict() for book in books])
 
         return f'Books successfully saved to db'
 
@@ -63,7 +63,7 @@ class JsonDB(BaseDB):
         if not readers:
             return f'Nothing to write to db'
 
-        self.__write_file('readers.json', [reader.to_json() for reader in readers])
+        self.__write_file('readers.json', [reader.to_dict() for reader in readers])
 
         return f'Books successfully saved to db'
 

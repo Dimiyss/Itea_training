@@ -1,6 +1,6 @@
 """The Library Module"""
-from utils.book import Book
-from utils.reader import Reader
+from .utils.book import Book
+from .utils.reader import Reader
 from typing import Any
 
 

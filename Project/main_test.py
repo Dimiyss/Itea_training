@@ -1,13 +1,13 @@
-import library as library_c
-import utils.book as book_c
-import utils.reader as reader_c
-from json_db import JsonDB
+from DALibrary import library as library_c
+from DALibrary.utils import book as book_c
+from DALibrary.utils import reader as reader_c
+from DALibrary.json_db import JsonDB
 from random import randint
 from time import sleep
 
 book_count_file = 0
 reader_count_file = 0
-const_path = './file_db/'
+const_path = 'file_db/'
 
 
 def first_load_from_file():
@@ -16,7 +16,7 @@ def first_load_from_file():
 
 def created_book_from_file(lib):
     global book_count_file
-    with open('/test_files/books.txt') as book_file_1:
+    with open('test_files/books.txt') as book_file_1:
         default_book = book_file_1.readlines()
         if book_count_file > len(default_book):
             book_count_file = 0
@@ -30,7 +30,7 @@ def created_book_from_file(lib):
 
 def created_reader_from_file(lib):
     global reader_count_file
-    with open('../test_files/readers.txt') as book_file_1:
+    with open('test_files/readers.txt') as book_file_1:
         default_reader = book_file_1.readlines()
         if reader_count_file > len(default_reader):
             reader_count_file = 0
@@ -56,7 +56,7 @@ if __name__ == '__main__':
     except ValueError:
         print('Wrong choice')
     if action_1 == 0:
-        my_library = library_c.Library(JsonDB.load_books(), JsonDB.load_readers())
+        my_library = library_c.Library(connector.load_books(), connector.load_readers())
     else:
         my_library = first_load_from_file()
 
