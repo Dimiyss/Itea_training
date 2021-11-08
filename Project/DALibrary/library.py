@@ -103,6 +103,9 @@ class Library:
         book.set_current_place(0)
         return f'Book {book} successfully returned to library'
 
+    def get_reader_list(self) -> list:
+        return self.__reader_list
+
     def get_book_list(self) -> list:
         return self.__book_list
 
