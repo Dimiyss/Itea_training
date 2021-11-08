@@ -4,6 +4,9 @@ class Singleton:
             cls.instance = super(Singleton, cls).__new__(cls)
         return cls.instance
 
+    def __init__(self):
+        print('hello')
+
 
 
 def test_func():

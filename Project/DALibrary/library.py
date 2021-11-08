@@ -1,6 +1,6 @@
 """The Library Module"""
-from .utils.book import Book
-from .utils.reader import Reader
+from utils.book import Book
+from utils.reader import Reader
 from typing import Any
 
 
@@ -102,6 +102,9 @@ class Library:
 
         book.set_current_place(0)
         return f'Book {book} successfully returned to library'
+
+    def get_reader_list(self) -> list:
+        return self.__reader_list
 
     def get_book_list(self) -> list:
         return self.__book_list

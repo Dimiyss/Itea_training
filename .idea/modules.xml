@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Project/DALibrary/.idea/DALibrary.iml" filepath="$PROJECT_DIR$/Project/DALibrary/.idea/DALibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Itea_training.iml" filepath="$PROJECT_DIR$/.idea/Itea_training.iml" />
     </modules>
   </component>
