@@ -1,8 +1,8 @@
 """Module for work with file data base in JSON format"""
 import json
-from .utils.db_interfaces import BaseDB
-from .utils.book import Book
-from .utils.reader import Reader
+from ..storage.db_interfaces import BaseDB
+from ..units.book import Book
+from ..units.reader import Reader
 
 
 class JsonDB(BaseDB):

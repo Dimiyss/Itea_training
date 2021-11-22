@@ -1,0 +1,9 @@
+Mathematics;Author_1;2021;Math
+Python Crash Course, 2nd Edition: A Hands‑On;Mattes;2019;Python
+The Data Warehouse Toolkit..;Kimbal;2019;Data
+Physic;Author_2;2018;Physic
+Physic_2;Author_3;2019;Physic
+The Data Warehouse Toolkit..;Kimbal;2010;Data
+Physic_prev;Old Author;1999;Physic
+Physic_7;Author_24;2021;Physic
+First The Data Warehouse Toolkit..;Kimbal;1995;Data
