@@ -12,5 +12,5 @@ print(f'Accept new connection {client_addr}')
 data = recv_msg(conn)
 print(data.decode(default_encodings))
 
-print(send_msg('Thanks'.encode(default_encodings), conn))
+send_msg('Thanks'.encode(default_encodings), conn)
 conn.close()
