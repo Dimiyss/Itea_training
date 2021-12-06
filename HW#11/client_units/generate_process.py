@@ -10,7 +10,6 @@ class PrimeGenerator(Process):
 
     def run(self) -> None:
         for prime in gen_primes():
-            #print(prime)
             self.gen_queue.put(prime)
 
         self.gen_queue.put(0)
