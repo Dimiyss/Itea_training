@@ -18,8 +18,6 @@ class WritePrime(Process):
                 
             self.write_file(f'{msg}\n')
 
-
-        print('Writer ended')
         return None
 
     def read_que(self):

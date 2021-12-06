@@ -14,3 +14,4 @@ class PrimeGenerator(Process):
 
         self.gen_queue.put(0)
         self.gen_queue.put(0)
+        self.gen_queue.put(0)

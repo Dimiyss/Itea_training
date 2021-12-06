@@ -19,11 +19,14 @@ def start_client():
 
     sender2 = Sender(client_queue, event)
     sender2.start()
+    sender3 = Sender(client_queue, event)
+    sender3.start()
 
     generator.join()
     #print(f'generator end {time() - start_time}')
     sender1.join()
     sender2.join()
+    sender3.join()
 
     print(f'Client end {time() - start_time}')
 

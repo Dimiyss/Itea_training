@@ -26,7 +26,6 @@ class Validator(Process):
             if is_num_prime:
                 self.queue_dest.put(num)
 
-        print('Validator ended')
         self.event_for_writer.set()
         self.queue_dest.put(0)
         return None

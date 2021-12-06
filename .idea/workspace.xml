@@ -2,59 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04f84770-ff09-47a3-9da7-696e09e13e20" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HW#11/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#11/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#11/client_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#11/client_units/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#11/client_units/generate_process.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#11/client_units/msgutils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#11/client_units/prime_genrator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#11/client_units/transmiter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#11/hw_main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#11/server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#11/server_units/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#11/server_units/check_prime.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#11/server_units/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#11/server_units/msgutils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#11/server_units/server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#11/server_units/thread_sercer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#11/server_units/validator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#11/server_units/write_in_file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/library.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/storage/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/storage/db_interfaces.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/storage/json_db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/storage/psycop_db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/units/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/units/book.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/units/reader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/utils/to_int.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_10_process/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_10_process/inc_process.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_10_process/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_10_process/p2c_process.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_10_process/thread_vs_process.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_10_process/thread_vs_process_primes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_11_asyncio/GET_single_thread_asyncio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_11_asyncio/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_11_asyncio/async_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_11_asyncio/async_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_11_asyncio/hw_main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_11_asyncio/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_11_asyncio/whats_await.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_12_psycopg2/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_9_2_thread/p2c_queue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_9_2_thread/p2c_simple.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_9_2_thread/semaphore.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_9_2_thread/timer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_alchemy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Itea_training.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Itea_training.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW#11/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW#11/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW#11/client_units/generate_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW#11/client_units/generate_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW#11/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW#11/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW#11/server_units/thread_sercer.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW#11/server_units/thread_sercer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW#11/server_units/validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW#11/server_units/validator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW#11/server_units/write_in_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW#11/server_units/write_in_file.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

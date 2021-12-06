@@ -21,6 +21,7 @@ class Receiver(Thread):
             msg = msg_raw.decode(default_encoding)
 
             if msg == 'End':
+                #print('End')
                 self.queue.put(0)
                 sys.exit(0)
 

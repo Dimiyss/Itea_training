@@ -20,7 +20,8 @@ def start_server():
     valid = Validator(check_queue, dest_queue, event_finish_server, event_finish_validator, 0)
 
     valid.start()
-
+    #valid_1 = Validator(check_queue, dest_queue, event_finish_server, event_finish_validator, 1)
+    #valid_1.start()
     writer = WritePrime(dest_queue, event_finish_validator, './server_units/test.txt')
     writer.start()
 
@@ -28,6 +29,7 @@ def start_server():
     writer.join()
     sys.exit(0)
     server.join()
+    #valid_1.join()
 
 
 if __name__ == '__main__':
