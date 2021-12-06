@@ -2,19 +2,82 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04f84770-ff09-47a3-9da7-696e09e13e20" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#11/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#11/client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#11/client_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#11/client_units/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#11/client_units/generate_process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#11/client_units/msgutils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#11/client_units/prime_genrator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#11/client_units/transmiter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#11/hw_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#11/server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#11/server_units/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#11/server_units/check_prime.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#11/server_units/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#11/server_units/msgutils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#11/server_units/server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#11/server_units/thread_sercer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#11/server_units/validator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#11/server_units/write_in_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/library.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/storage/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/storage/db_interfaces.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/storage/json_db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/storage/psycop_db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/units/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/units/book.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/units/reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW#12/DALibrary/utils/to_int.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_10_process/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_10_process/inc_process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_10_process/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_10_process/p2c_process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_10_process/thread_vs_process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_10_process/thread_vs_process_primes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_11_asyncio/GET_single_thread_asyncio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_11_asyncio/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_11_asyncio/async_4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_11_asyncio/async_start.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_11_asyncio/hw_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_11_asyncio/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_11_asyncio/whats_await.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_12_psycopg2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_9_2_thread/p2c_queue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_9_2_thread/p2c_simple.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_9_2_thread/semaphore.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_9_2_thread/timer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql_alchemy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Itea_training.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Itea_training.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="20dbo4buEDTgfDzpCQtQMyzGBma" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -25,7 +88,124 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunManager" selected="Python.client">
+    <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Itea_training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HW#11" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW#11/client.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="client_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Itea_training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HW#11" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW#11/client_1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="prime_genrator (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Itea_training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HW#11/client" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW#11/client/prime_genrator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="prime_genrator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Itea_training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HW#11" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW#11/prime_genrator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Itea_training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HW#11/client" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW#11/client/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.client" />
+        <item itemvalue="Python.prime_genrator (1)" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.client_1" />
+        <item itemvalue="Python.prime_genrator" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -37,5 +217,16 @@
       <updated>1636377582812</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
