@@ -1,17 +1,24 @@
 """The Reader Module"""
+from ..storage.sqlstorage.storage_base import Base
+from sqlalchemy import Column, Integer, Text, SmallInteger, Boolean
+from sqlalchemy.orm import relationship
 
 
-class Reader:
+class Reader(Base):
     """Class that describe reader in library"""
-    count = 0
+    __tablename__ = 'reader'
 
-    def __init__(self, first_name: str, second_name: str, age: int, id: int = None, is_active: bool = True):
-        Reader.count += 1
-        self.__id = id if id else Reader.count
-        self.__first_name = first_name
-        self.__second_name = second_name
-        self.__age = age
-        self.__is_active = is_active
+    id = Column(Integer, primary_key=True)
+    first_name = Column(Text, nullable=False)
+    second_name = Column(Text, nullable=False)
+    age = Column(SmallInteger, nullable=False)
+    is_active = Column(Boolean, nullable=False)
+
+    def __init__(self, first_name: str, second_name: str, age: int, is_active: bool = True):
+        self.first_name = first_name
+        self.second_name = second_name
+        self.age = age
+        self.is_active = is_active
 
     def to_dict(self) -> dict:
         """
@@ -19,11 +26,11 @@ class Reader:
         :return: dict
         """
         return {
-            "id": self.__id,
-            "first_name": self.__first_name,
-            "second_name": self.__second_name,
-            "age": self.__age,
-            "is_active": self.__is_active
+            "id": self.id,
+            "first_name": self.first_name,
+            "second_name": self.second_name,
+            "age": self.age,
+            "is_active": self.is_active
         }
 
     @classmethod
@@ -32,18 +39,17 @@ class Reader:
             obj_attr_dict['first_name'],
             obj_attr_dict['second_name'],
             obj_attr_dict['age'],
-            obj_attr_dict['id'],
             obj_attr_dict['is_active']
         )
 
     def get_id(self) -> int:
-        return self.__id
+        return self.id
 
     def deactivate(self):
-        self.__is_active = False
+        self.is_active = False
 
     def __str__(self):
-        return f'{self.__id}_{self.__first_name} {self.__second_name}'
+        return f'{self.id}_{self.first_name} {self.second_name}'
 
     def __repr__(self):
-        return f'{self.__id}_{self.__first_name} {self.__second_name}'
+        return f'{self.id}_{self.first_name} {self.second_name}'

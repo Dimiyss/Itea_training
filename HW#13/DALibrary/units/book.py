@@ -1,10 +1,22 @@
 """The Book Module"""
 from typing import Any
+from ..storage.sqlstorage.storage_base import Base
+from sqlalchemy import Column, Integer, Text, SmallInteger, ForeignKey
+from sqlalchemy.orm import relationship
 
 
-class Book:
+class Book(Base):
     """Class that describe book in library"""
-    count = 0
+    __tablename__ = 'book'
+
+    id = Column(Integer, primary_key=True)
+    title = Column(Text, nullable=False)
+    author = Column(Text, nullable=False)
+    published_year = Column(SmallInteger, nullable=False)
+    genre = Column(Text, nullable=False)
+
+    reader_id = Column(Integer, ForeignKey('reader.id'), nullable=True)
+    reader = relationship('Reader', backref='book')
 
     def __init__(
             self,
@@ -12,25 +24,22 @@ class Book:
             author: str,
             published_year: str,
             genre: str,
-            _id: int = None,
             reader_id: int = None
     ):
-        Book.count += 1
-        self.__id = _id if _id else Book.count
-        self.__title = title
-        self.__author = author
-        self.__published_year = published_year
-        self.__genre = genre
-        self.__reader_id = reader_id  # None - book in library, else - reader id
+        self.title = title
+        self.author = author
+        self.published_year = published_year
+        self.genre = genre
+        self.reader_id = reader_id  # None - book in library, else - reader id
 
     def get_id(self) -> int:
-        return self.__id
+        return self.id
 
     def get_current_place(self):
-        return self.__reader_id
+        return self.reader_id
 
     def set_current_place(self, reader_id):
-        self.__reader_id = reader_id
+        self.reader_id = reader_id
 
     def get_attribute_value(self, name: str) -> Any:
         """
@@ -39,11 +48,11 @@ class Book:
         :return: attribute valuer
         """
         if name == 'title':
-            return self.__title
+            return self.title
         if name == 'published_date':
-            return self.__published_year
+            return self.published_year
         if name == 'author':
-            return self.__author
+            return self.author
 
     def to_dict(self) -> dict:
         """
@@ -51,11 +60,11 @@ class Book:
         :return: dict
         """
         return {
-            "title": self.__title,
-            "author": self.__author,
-            "published_year": self.__published_year,
-            "genre": self.__genre,
-            "reader_id": self.__reader_id
+            "title": self.title,
+            "author": self.author,
+            "published_year": self.published_year,
+            "genre": self.genre,
+            "reader_id": self.reader_id
         }
 
     @classmethod
@@ -69,8 +78,5 @@ class Book:
             obj_attr_dict['reader_id']
         )
 
-    def __str__(self):
-        return f'{self.__id}:{self.__title}'
-
     def __repr__(self):
-        return f'{self.__id}:{self.__title}'
+        return f'Book_id:{self.id},Title: {self.title}, Author: {self.author}, published: {self.published_year}'

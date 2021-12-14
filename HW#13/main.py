@@ -1,7 +1,7 @@
 from DALibrary.library import Library
 from DALibrary.units import reader as reader_c, book as book_c
 from DALibrary.utils.to_int import to_int
-from DALibrary.storage.psycop_db import PsyCopgDB
+from DALibrary.storage.sqlstorage.storage_method import AlchemyStorage
 from random import randint
 from time import sleep
 
@@ -61,7 +61,7 @@ def choise():
 
 
 def main_loop():
-    connector = PsyCopgDB(config)
+    connector = AlchemyStorage(db_user='postgres', db_password='pgpwd4habr', db_name='postgres')
     my_library = Library(connector)
     while True:
         action = choise()
