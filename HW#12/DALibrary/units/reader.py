@@ -5,11 +5,12 @@ class Reader:
     """Class that describe reader in library"""
     count = 0
 
-    def __init__(self, first_name: str, second_name: str, id: int = None, is_active: bool = True):
+    def __init__(self, first_name: str, second_name: str, age: int, id: int = None, is_active: bool = True):
         Reader.count += 1
         self.__id = id if id else Reader.count
         self.__first_name = first_name
         self.__second_name = second_name
+        self.__age = age
         self.__is_active = is_active
 
     def to_dict(self) -> dict:
@@ -21,6 +22,7 @@ class Reader:
             "id": self.__id,
             "first_name": self.__first_name,
             "second_name": self.__second_name,
+            "age": self.__age,
             "is_active": self.__is_active
         }
 
@@ -29,6 +31,7 @@ class Reader:
         return cls(
             obj_attr_dict['first_name'],
             obj_attr_dict['second_name'],
+            obj_attr_dict['age'],
             obj_attr_dict['id'],
             obj_attr_dict['is_active']
         )

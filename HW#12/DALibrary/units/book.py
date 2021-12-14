@@ -10,16 +10,16 @@ class Book:
             self,
             title: str,
             author: str,
-            published_date: str,
+            published_year: str,
             genre: str,
-            id: int = None,
+            _id: int = None,
             reader_id: int = None
     ):
         Book.count += 1
-        self.__id = id if id else Book.count
+        self.__id = _id if _id else Book.count
         self.__title = title
         self.__author = author
-        self.__published_date = published_date
+        self.__published_year = published_year
         self.__genre = genre
         self.__reader_id = reader_id  # None - book in library, else - reader id
 
@@ -41,7 +41,7 @@ class Book:
         if name == 'title':
             return self.__title
         if name == 'published_date':
-            return self.__published_date
+            return self.__published_year
         if name == 'author':
             return self.__author
 
@@ -51,12 +51,11 @@ class Book:
         :return: dict
         """
         return {
-            "id": self.__id,
             "title": self.__title,
             "author": self.__author,
-            "published_date": self.__published_date,
+            "published_year": self.__published_year,
             "genre": self.__genre,
-            "current_place": self.__reader_id
+            "reader_id": self.__reader_id
         }
 
     @classmethod
@@ -64,7 +63,7 @@ class Book:
         return cls(
             obj_attr_dict['title'],
             obj_attr_dict['author'],
-            obj_attr_dict['published_date'],
+            obj_attr_dict['published_year'],
             obj_attr_dict['genre'],
             obj_attr_dict['id'],
             obj_attr_dict['reader_id']

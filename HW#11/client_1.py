@@ -21,16 +21,12 @@ def start_client():
 def send_prime(number):
     with socket() as sock:
         sock.connect(('localhost', 12345))
+        str_prime = []
 
-        #sem.acquire()
         for prime in gen_primes():
-            # str_prime = str(prime)
-            if prime:
-                send_msg(f'{prime}'.encode(default_encoding), sock)
-                #print(f'{prime} thread_num {number}')
-            else:
-                send_msg('End'.encode(default_encoding))
-       # sem.release()
+            str_prime.append(prime)
+
+        send_msg(','.join(str_prime).encode(default_encoding), sock)
 
 
 if __name__ == '__main__':
