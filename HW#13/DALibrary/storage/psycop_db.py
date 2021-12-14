@@ -81,7 +81,7 @@ class PsyCopgDB(BaseDB, ABC):
 
         return msg
 
-    def update_book(self, book_id: int, reader_id: int, is_return: bool) -> bool:
+    def update_book(self, book_id: int, reader_id: int, is_return: bool) -> str:
         """Method that update book in DB
 
         :param book_id: the book identifier in database
@@ -275,11 +275,11 @@ class PsyCopgDB(BaseDB, ABC):
             print(reader)
             insert_values_list.append(tmpl.READER_VALUES.render(reader))
 
-        self.__execute_query(
+        res = self.__execute_query(
             connection,
             tmpl.INSERT_TEMPLATE.render(table_name=self.__reader_table_name,
-                                        columns=tmpl.READER_COLUMNS,
-                                        insert_values=','.join(insert_values_list))
+                                   columns=tmpl.READER_COLUMNS,
+                                   insert_values=','.join(insert_values_list))
         )
         # if not res:
         #     connection.rollback()
