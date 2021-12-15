@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #f5f7fa;
+    padding: 20px;
+    font-family: Montserrat;
+}
+.quote {
+    color: #ffffff;
+}
+.main_header {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+.header {
+    width: 100%;
+    height: 72px;
+    background: #1e2939;
+}
+.nav {
+    width: 100%;
+    height: 30px;
+    background: #1e2939;
+    color: #ffffff;
+    margin: 0 auto;
+    padding-top: 7px;
+}
+ul.menu {
+    display: inline-block;
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul.menu li {
+    float: left;
+}
+
+ul.menu li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 20px;
+    -webkit-transition: text-shadow linear 0.2s;
+    -moz-transition: text-shadow linear 0.2s;
+    -ms-transition: text-shadow linear 0.2s;
+    -o-transition: text-shadow linear 0.2s;
+    transition: text-shadow linear 0.2s;
+}
+
+ul.menu li a:hover {
+    text-shadow: 0 0 15px rgba(255,255,255, 0.8);
+}
+.headerContent {
+    width: 960px;
+    padding: 20px 10px 0;
+    height: 52px;
+    margin: 0 auto;
+}
+
+.headerContent h1 {
+    font-size: 30px;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+
+.headerContent h1 a {
+    text-decoration: none;
+    color: #a5adb8;
+}
+
+.headerContent p {
+    margin: 0;
+    line-height: 18px;
+}
+.wrapper {
+    background: #ffffff;
+    display: flex;
+}
+.sidebar {
+    background: #1e2939;
+    width: 370px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.meny{
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.meny_title{
+    line-height: 24px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.cont_link{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;  
+    color: #7d848d;
+}
+.meny_title_line{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #E0FFFF;
+    margin-right: 10px;
+}
+.my_photo {
+    width: 370px;
+}
+.about_me_cont {
+    width: 100%;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 90px;
+    padding-bottom: 110px;
+}
+
+.profession {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 89px;
+
+}
+.description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.list_domain {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color:#000000;
+    margin-bottom: 50px;
+}
+.info_container{
+    margin-bottom: 50px;
+}
+
+.input_form form {
+    float: center;
+    margin-left: 20%;
+    height = 100%;
+    width: 100%;
+}
+.input_form input,.addBookCol textarea {
+    margin-left: 70px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 50px;
+}
+button.submit {
+    width: 35%;
+    background-color: #1e2939;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button.reset {
+    width: 35%;
+    background-color: #1e2939;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.customers tr:nth-child(even){background-color: #f2f2f2;}
+
+.customers tr:hover {background-color: #ddd;}
+
+.customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1e2939;
+  color: white;
+}
+.customers [type=submit] {
+  width: 35%;
+  background-color: #1e2939;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.customers [type=reset] {
+  width: 35%;
+  background-color: #1e2939;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.customers [type=submit]:hover {
+    background: #00CED1;
+    color: #FFFAFA;
+}
+
+.customers [type=reset]:hover {
+    background: #00CED1;
+    color: #FFFAFA;
+}
+
+.input_reg [type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input_reg [type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input_reg [type=submit] {
+  width: 35%;
+  background-color: #1e2939;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input_reg [type=reset] {
+  width: 35%;
+  background-color: #1e2939;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input_reg [type=submit]:hover {
+    background: #00CED1;
+    color: #FFFAFA;
+}
+
+.input_reg [type=reset]:hover {
+    background: #00CED1;
+    color: #FFFAFA;
+}

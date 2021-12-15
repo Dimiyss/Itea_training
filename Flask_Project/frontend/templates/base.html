@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=M, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <body>
+        <div class="main_header">
+            <div class="header">
+                <div class="headerContent">
+                    <div class="quote"><p>A classic is something that everybody wants to have read and nobody wants to read.</p></div>
+                    <div class="right">
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav">
+                {% if current_user.is_authenticated %}
+                <label class="userInfo">Hello {{current_user.get_name()}}</label>
+                {% else %}
+                {% endif %}
+
+                <ul class="menu">
+                    <li><a href="/">Home</a></li>
+                    {% if not current_user.is_authenticated %}
+                    <li><a href="login">Sign In</a></li>
+                    <li><a href="registration">Sign Up</a></li>
+                    {% else %}
+                    <li><a href="logout">Logout</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+
+    <div class="wrapper">
+        <aside class="sidebar">
+           <img class="my_photo" src="../static/img/Photo.jpg" alt="My photo">
+            <div class="meny">
+                <form>
+                    <h2 class="meny_title">Main menu</h2>
+                    <ul class="meny_title_line">
+                        <li><a class="cont_link" href="books">All books</a></li>
+                        <li><a class="cont_link" href="book_add">Add book</a></li>
+                        <li><a class="cont_link" href="delete_book">Delete book</a></li>
+                        <li><a class="cont_link" href="take_book">Take book</a></li>
+                        <li><a class="cont_link" href="return_book">Return book</a></li>
+                    </ul>
+                </form>
+            </div>
+
+        </aside>
+
+        {% block content %}{% endblock %}
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="about_me_cont">
+
+    {% if message %}
+    <h2 class = "profession">{{message}}</h2>
+    <br><br>
+    {% endif %}
+
+    <h1 class="about_me_cont">Add new book</h1><p></p>
+
+    <form class="input_reg" method="post">
+        <input type="text" id="title" name="title" placeholder="Title" required>
+        <input type="text" id="author" name="author" placeholder="Author" required>
+        <input type="text" id="year" name="year" placeholder="Published year" required>
+        <input type="text" id="genre" name="genre" placeholder="Genre" required>
+
+
+        <br><br>
+
+        <center>
+            <button type="submit" class="submit">Submit</button>
+            <button type="reset" class="reset">Clear</button>
+        </center>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="about_me_cont">
+    <div class="info_container">
+        <h1 class = "name">All books in Library</h1>
+    </div>
+    {% if books %}
+    <table class="customers">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Published year</th>
+            <th>Genre</th>
+            <th>Is available</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for book in books %}
+        <tr>
+            <td>{{book.id}}</td>
+            <td>{{book.title}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.published_year}}</td>
+            <td>{{book.genre}}</td>
+            {% if book.reader_id %}
+            <td>No</td>
+            {% else %}
+            <td>Yes</td>
+            {% endif %}
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+        <h1>No books in Library</h1>
+    {% endif %}
+</div>
+{% endblock %}

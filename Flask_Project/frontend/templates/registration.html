@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="about_me_cont">
+
+    {% if message %}
+    <h2 class = "profession">{{message}}</h2>
+    <br><br>
+    {% endif %}
+
+    <h1 class="about_me_cont">Please enter your data</h1><p></p>
+
+    <form class="input_reg" method="post">
+        <input type="text" id="first_name" name="first_name" placeholder="First name" required>
+        <input type="text" id="second_name" name="second_name" placeholder="Second name" required>
+        <input type="text" id="age" name="age" placeholder="Age" required>
+        <input type="text" id="email" name="email" placeholder="Email" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <input type="password" id="confirm_password" placeholder="Repeat password" required>
+
+        <br><br>
+
+        <center>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </center>
+    </form>
+    <script>
+        var password = document.getElementById("password")
+          , confirm_password = document.getElementById("confirm_password");
+
+        function validatePassword(){
+          if(password.value != confirm_password.value) {
+            confirm_password.setCustomValidity("Passwords Don't Match");
+          } else {
+            confirm_password.setCustomValidity('');
+          }
+        }
+
+        password.onchange = validatePassword;
+        confirm_password.onkeyup = validatePassword;
+    </script>
+</div>
+{% endblock %}

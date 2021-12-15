@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="about_me_cont">
+    {% if message %}
+    <h2 class = "profession">{{message}}</h2>
+    <br><br>
+    {% endif %}
+    <div class="info_container">
+        <h1 class = "name">Choose books that you want to delete</h1>
+    </div>
+    {% if books %}
+    <form class="import_reg" method="post">
+        <table class="customers">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Published year</th>
+                <th>Genre</th>
+                <th>#</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for book in books %}
+            <tr>
+                <td>{{book.id}}</td>
+                <td>{{book.title}}</td>
+                <td>{{book.author}}</td>
+                <td>{{book.published_year}}</td>
+                <td>{{book.genre}}</td>
+                <td><input type="checkbox" name="{{book.id}}" value=""></td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <br>
+        <center>
+            <button type="submit" class="submit">Submit</button>
+            <button type="reset" class="reset">Clear</button>
+        </center>
+        {% else %}
+            <h1>No books in Library</h1>
+        {% endif %}
+
+    </form>
+
+</div>
+{% endblock %}
