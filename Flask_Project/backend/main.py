@@ -126,9 +126,9 @@ def api_user_login():
         if not (email and psw):
             return render_template('login.html', message='Error! Miss required fields! Pls, repeat!')
 
-        reader = my_library.get_user_by_email(email)
-        if reader and reader.check_psw(psw):
-            login_user(reader)
+        user = my_library.get_user_by_email(email)
+        if user and user.check_psw(psw):
+            login_user(user)
             if next_url:
                 return redirect(next_url)
             return redirect(url_for('home_page'))
